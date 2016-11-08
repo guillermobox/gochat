@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/chat.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script src="js/chat.js"></script>
+		<script src="js/routes.js"></script>
+		<script src="js/commands.js"></script>
+
+		<script id="Message" type="text/x-handlebars-template">
+		<div class="message-wrapper">
+			<div class="message-margin">{{margin}}</div>
+			<div class="message-content message {{type}}">{{message}}</div>
+		</div>
+		</script>
+
+		<script id="Chat" type="text/x-handlebars-template">
+		<div id="ChatWindow">
+			<div id="ChatTitle" class="connecting"></div>
+			<div id="ChatConversation"> </div>
+			<div id="ChatInput">
+				<form id="ChatForm">
+					<input name="ChatInputField" type="text" autocomplete="off" placeholder="Send a message, or type /help"> </input>
+				</form>
+			</div>
+		</div>
+		</script>
+	</head>
+
+	<body>
+		<div id="chatcontainer"> </div>
+	</body>
+</html>

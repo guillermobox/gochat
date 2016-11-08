@@ -1,0 +1,12 @@
+Welcome to gochat, you have to login in order to use the chat, and if you see this message, that means that you are already connected to the server.
+
+So type the following to login with the name you want: /login NAME
+
+Other available commands are:
+
+/list
+   Shows the users logged in
+/logout
+   The oposite of login
+/help
+   Shows this information
